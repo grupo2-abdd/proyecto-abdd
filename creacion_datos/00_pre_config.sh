@@ -12,7 +12,7 @@ python3.9 -m pip install --user --upgrade pip
 
 # 3. Instalación de dependencias del proyecto
 echo "[3/4] Instalando librerías (Faker, Oracle, SQL Server, MariaDB, Pandas)..."
-python3.9 -m pip install --user Faker oracledb mysql-connector-python pymssql pandas sqlalchemy
+python3.9 -m pip install --user Faker oracledb mysql-connector-python pymssql pandas sqlalchemy pyodbc tabulate
 
 # 4. Configuración del ALIAS
 # Usaremos .bashrc para que el alias persista tras reiniciar la sesión
