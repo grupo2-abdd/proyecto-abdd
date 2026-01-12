@@ -1,8 +1,6 @@
-# Este script genera la definición del diagrama en formato Mermaid
-# Puedes copiar el resultado en: https://mermaid.live/
 
-def generar_diagrama():
-    mermaid_code = """
+--- COPIA EL SIGUIENTE CÓDIGO EN mermaid.live PARA VER EL DIAGRAMA ---
+
 classDiagram
     direction LR
     
@@ -33,10 +31,5 @@ classDiagram
     MariaDB_Admin --o SQLServer_Citas : "paciente_id / medico_id"
     SQLServer_Citas --o Oracle_Clinica : "cita_id"
     MariaDB_Admin --o Oracle_Clinica : "paciente_id"
-    """
-    print("\n--- COPIA EL SIGUIENTE CÓDIGO EN mermaid.live PARA VER EL DIAGRAMA ---")
-    print(mermaid_code)
-    print("----------------------------------------------------------------------")
-
-if __name__ == "__main__":
-    generar_diagrama()
+    
+----------------------------------------------------------------------
