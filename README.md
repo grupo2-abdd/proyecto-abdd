@@ -26,7 +26,7 @@ Se ha diseñado un ecosistema donde tres motores distintos (MariaDB, SQL Server 
 
 ## Acceso a la Máquina Virtual (VM)
 La infraestructura completa configurada en Oracle Linux 8 se encuentra disponible para su despliegue:
-* **Enlace de descarga:** [INSERTE LINK AQUÍ]
+* **Enlace de descarga:** [Máquina virtual configurada](https://drive.google.com/file/d/1dl4nUn5MffcKvJ3jk29QvVmR-uKywaW1/view?usp=sharing)
 
 ---
 
