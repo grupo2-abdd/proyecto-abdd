@@ -5,6 +5,7 @@ echo "--- ABRIENDO PUERTOS PARA EL TRIDENTE DE BASES DE DATOS ---"
 sudo firewall-cmd --permanent --add-port=3000/tcp
 sudo firewall-cmd --permanent --add-port=4000/tcp
 sudo firewall-cmd --permanent --add-port=5000/tcp
+sudo firewall-cmd --permanent --add-port=8501/tcp
 
 # Recargar para aplicar cambios
 sudo firewall-cmd --reload
