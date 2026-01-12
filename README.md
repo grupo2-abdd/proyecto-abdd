@@ -6,7 +6,7 @@
 
 ---
 
-## 👥 Integrantes
+## Integrantes
 * Cisneros Edgar
 * Freire Anderson
 * Toscano Jhon
@@ -14,7 +14,7 @@
 
 ---
 
-## 📄 Descripción del Proyecto
+## Descripción del Proyecto
 Este proyecto aborda la complejidad de gestionar un entorno de **Base de Datos Heterogénea y Federada**. El enfoque principal no es la temática operativa (Hospital), sino el desafío técnico de la **administración multi-motor**. 
 
 Se ha diseñado un ecosistema donde tres motores distintos (MariaDB, SQL Server y Oracle) operan de forma independiente pero coordinada. El flujo de trabajo abarca:
@@ -24,13 +24,13 @@ Se ha diseñado un ecosistema donde tres motores distintos (MariaDB, SQL Server 
 
 ---
 
-## 💽 Acceso a la Máquina Virtual (VM)
+## Acceso a la Máquina Virtual (VM)
 La infraestructura completa configurada en Oracle Linux 8 se encuentra disponible para su despliegue:
 * **Enlace de descarga:** [INSERTE LINK AQUÍ]
 
 ---
 
-## 🏗️ Arquitectura de Base de Datos Federada
+## Arquitectura de Base de Datos 
 Aunque los motores están separados, los datos están unidos por una lógica de negocio que Python administrará.
 
 | Base de Datos | Motor | Puerto | Entidad | Rol Estratégico |
@@ -40,13 +40,9 @@ Aunque los motores están separados, los datos están unidos por una lógica de 
 | **Clínica** | Oracle XE | 3000 | Historial_Atenciones | **Carga Crítica.** Almacena el volumen masivo de datos médicos. |
 
 
-
-[Image of a federated database architecture diagram]
-
-
 ---
 
-## 📐 Estructura de Tablas (Esquema Lógico)
+## Estructura de Tablas (Esquema Lógico)
 
 ### 1. MariaDB (Gestión Administrativa)
 * **pacientes:** `paciente_id (PK)`, `nombre`, `fecha_nacimiento`, `genero`, `telefono`.
@@ -60,12 +56,11 @@ Aunque los motores están separados, los datos están unidos por una lógica de 
 
 ---
 
-## 📊 Diagrama de Clases
-[Subir imagen aquí]
-
+## Diagrama de Clases
+![Diagrama de clases](https://raw.githubusercontent.com/grupo2-abdd/proyecto-abdd/refs/heads/main/documentos/diagrama_clases.png)
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 ```text
 ├── base_de_datos
 │   ├── mariadb_hospital.sql
