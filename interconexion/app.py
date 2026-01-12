@@ -105,7 +105,7 @@ with st.sidebar:
     st.info("Logs Verbose activos en el panel inferior.")
 
 # --- TÍTULO PRINCIPAL ---
-st.title("🏥 Capa de Interconexión: Middleware Python")
+st.title("🏥 Capa de Interconexión: Middleware")
 
 # --- SECCIÓN 1: BÚSQUEDA GLOBAL (VIRTUAL JOIN) ---
 st.header("🔎 1. Consulta Unificada de Paciente")
@@ -120,7 +120,7 @@ if st.button("Buscar en toda la Red"):
             log.log_sql("MariaDB", query, (search_id,))
             df_paciente = pd.read_sql(query, conn, params=[search_id])
             conn.close()
-            st.subheader("👤 Datos del Paciente (MariaDB)")
+            st.subheader("Datos del Paciente (MariaDB)")
             if not df_paciente.empty:
                 st.dataframe(df_paciente, use_container_width=True)
             else:
@@ -134,7 +134,7 @@ if st.button("Buscar en toda la Red"):
             log.log_sql("SQL Server", query, (search_id,))
             citas_df = pd.read_sql(query, conn, params=(search_id,))
             conn.close()
-            st.subheader("🗓️ Historial de Citas (SQL Server)")
+            st.subheader("Historial de Citas (SQL Server)")
             if not citas_df.empty:
                 st.dataframe(citas_df, use_container_width=True)
             else:
@@ -148,7 +148,7 @@ if st.button("Buscar en toda la Red"):
             log.log_sql("Oracle", query, (search_id,))
             historial_df = pd.read_sql(query, conn, params=[search_id])
             conn.close()
-            st.subheader("🩺 Historial de Atenciones Clínicas (Oracle)")
+            st.subheader("Historial de Atenciones Clínicas (Oracle)")
             if not historial_df.empty:
                 st.dataframe(historial_df, use_container_width=True)
             else:
@@ -160,7 +160,7 @@ if st.button("Buscar en toda la Red"):
 st.markdown("---")
 
 # --- SECCIÓN 2: GESTIÓN DE REGISTROS CON VALIDACIÓN ---
-st.header("➕ 2. Gestión de Registros (con Lógica Transaccional Mejorada)")
+st.header("2. Gestión de Registros (Lógica Transaccional)")
 
 def id_exists(engine, db_name, table, id_column, id_value):
     conn, cursor = None, None
@@ -343,7 +343,7 @@ with tab_ate:
 st.markdown("---")
 
 # --- SECCIÓN 3: ESTRUCTURA DE LA CAPA DE DATOS ---
-st.header("📊 3. Referencia Visual del Ecosistema")
+st.header("3. Referencia Visual del Ecosistema")
 st.write("Estructura lógica de las tablas distribuidas en la infraestructura híbrida.")
 col_m, col_s, col_o = st.columns(3)
 with col_m:
@@ -391,7 +391,7 @@ with col_o:
 st.markdown("---")
 
 # --- SECCIÓN 4: LABORATORIO DE MOTORES ---
-st.header("🛠️ 4. Laboratorio de Motores y Pruebas de Carga")
+st.header("4. Laboratorio de Motores y Pruebas de Carga")
 tabs = st.tabs(["📊 Estadísticas Globales", "🗂️ Explorador de Datos", "🔗 Joins Federados", "⚡ Benchmark de Latencia", "🔋 Info del Sistema"])
 
 with tabs[0]:
