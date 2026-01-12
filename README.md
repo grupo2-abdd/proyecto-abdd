@@ -74,7 +74,7 @@ Aunque los motores están separados, los datos están unidos por una lógica de 
 ├── documentos
 │   ├── diagrama_clases.png
 │   ├── diagrama_clases.txt
-│   └── MANUAL.md
+│   └── MANUAL.md  // MANUAL DE CONFIGURACIÓN Y DESPLIEGUE DEL SISTEMA
 ├── instalacion
 │   ├── 00_preparacion_sistema.sh
 │   ├── 01_post_instalacion.sh
